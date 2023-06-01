@@ -11,19 +11,19 @@ const {
   } = require('../controllers/bookController');
   
   // GET /books
-  router.get('../models/book.js', getAllBooks);
+  router.get('/books', getAllBooks);
   
   // GET /books/:id
-  router.get('../models/book.js/:id', getBookById);
+  router.get('/books/:id', getBookById);
   
   // POST /books
-  router.post('../models/book.js', createBook);
+  router.post('/books', createBook);
   
   // PUT /books/:id
-  router.put('../models/book.js/:id', updateBook);
+  router.put('/books/:id', updateBook);
   
   // DELETE /books/:id
-  router.delete('../models/book.js/:id', deleteBook);
+  router.delete('/books/:id', deleteBook);
 
 
 module.exports = router;
