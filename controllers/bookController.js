@@ -1,4 +1,4 @@
-const Book = require('../book.model');
+const Book = require('../models/book');
 
 // Controller for GET /books
 exports.getAllBooks = async (req, res) => {

@@ -8,22 +8,22 @@ const {
     createBook,
     updateBook,
     deleteBook,
-  } = require('./controllers/bookController');
+  } = require('../controllers/bookController');
   
   // GET /books
-  router.get('/books', getAllBooks);
+  router.get('../models/book.js', getAllBooks);
   
   // GET /books/:id
-  router.get('/books/:id', getBookById);
+  router.get('../models/book.js/:id', getBookById);
   
   // POST /books
-  router.post('/books', createBook);
+  router.post('../models/book.js', createBook);
   
   // PUT /books/:id
-  router.put('/books/:id', updateBook);
+  router.put('../models/book.js/:id', updateBook);
   
   // DELETE /books/:id
-  router.delete('/books/:id', deleteBook);
+  router.delete('../models/book.js/:id', deleteBook);
 
 
 module.exports = router;
